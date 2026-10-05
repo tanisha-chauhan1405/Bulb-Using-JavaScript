@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bulb</title>
+    <script>
+        {
+            function switchON() {
+                document.getElementById('btn').src = "ON_bulb.jpeg"
+            }
+            function switchOFF() {
+                document.getElementById('btn').src = "OFF_bulb.jpeg"
+            }
+        }
+    </script>
+</head>
+
+    <button type="button" onclick="switchON();">Switch on the bulb</button>
+    <img id="btn" src="OFF_bulb.jpeg" width="200px" height="200px">
+    <button type="button" onclick="switchOFF();">Switch off the bulb</button>
+</body>
+</html>

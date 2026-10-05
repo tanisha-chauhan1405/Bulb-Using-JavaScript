@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bulb</title>
+    <script>
+        {
+            function hide() {
+                document.getElementById('son').style.display = "block"
+                document.getElementById('soff').style.display = "none"
+            }
+            function switchON() {
+                document.getElementById('btn').src = "ON_bulb.jpeg"
+                document.getElementById('son').style.display = "none"
+                document.getElementById('soff').style.display = "block"
+            }
+            function switchOFF() {
+                document.getElementById('btn').src = "OFF_bulb.jpeg"
+                document.getElementById('son').style.display = "block"
+                document.getElementById('soff').style.display = "none"
+            }
+        }
+    </script>
+</head>
+
+<body onload="hide()">
+
+    <button type="button" id="son" onclick="switchON();">Switch on the bulb</button>
+    <button type="button" id="soff" onclick="switchOFF();">Switch off the bulb</button>
+    <img id="btn" src="OFF_bulb.jpeg" width="200px" height="200px">
+</body>
+</html>
